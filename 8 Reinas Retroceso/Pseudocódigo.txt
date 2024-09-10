@@ -1,0 +1,77 @@
+Pseudocódigo
+Inicialización del Tablero:
+
+Crear una matriz de 8x8 para representar el tablero.
+Inicializar todas las posiciones en la matriz a 0 (vacío).
+Algoritmo de Colocación de Reinas:
+
+Orden de Colocación:
+
+Priorizar la colocación de reinas en base a:
+Columnas (de izquierda a derecha)
+Filas (de arriba hacia abajo)
+Diagonales (para asegurar que las reinas no se ataquen en diagonales)
+Función es_seguro(fila, columna):
+
+Verificar si es seguro colocar una reina en la fila y columna dadas.
+Verificar que no haya otras reinas en la misma fila o columna.
+Verificar que no haya otras reinas en las diagonales.
+Función resolver(columna):
+
+Si la columna es igual a 8 (tablero completo), se ha encontrado una solución:
+Contar y almacenar la solución.
+Imprimir el estado actual del tablero.
+Volver a la llamada anterior para probar nuevas posiciones.
+Para cada fila en la columna actual:
+Si es_seguro(fila, columna):
+Colocar una reina en tablero[columna] = fila.
+Llamar recursivamente a resolver(columna + 1).
+Retirar la reina (tablero[columna] = -1) y probar la siguiente fila.
+Impresión de Resultados:
+
+Imprimir cada estado del tablero cuando se encuentra una solución.
+Incluir coordenadas de las reinas en formato de letras (A-H para columnas) y números (1-8 para filas).
+Guardar cada solución en un archivo con formato de nombre que incluya la fecha y hora actual.
+
+Ejemplo de Estado Inicial (E0):
+
+{0, 0, 0, 0, 0, 0, 0, 0}
+{0, 0, 0, 0, 0, 0, 0, 0}
+{0, 0, 0, 0, 0, 0, 0, 0}
+{0, 0, 0, 0, 0, 0, 0, 0}
+{0, 0, 0, 0, 0, 0, 0, 0}
+{0, 0, 0, 0, 0, 0, 0, 0}
+{0, 0, 0, 0, 0, 0, 0, 0}
+{0, 0, 0, 0, 0, 0, 0, 0}
+
+Ejemplo de Estado con Primera Reina (E1):
+
+{R, 0, 0, 0, 0, 0, 0, 0}
+{0, 0, 0, 0, 0, 0, 0, 0}
+{0, 0, 0, 0, 0, 0, 0, 0}
+{0, 0, 0, 0, 0, 0, 0, 0}
+{0, 0, 0, 0, 0, 0, 0, 0}
+{0, 0, 0, 0, 0, 0, 0, 0}
+{0, 0, 0, 0, 0, 0, 0, 0}
+{0, 0, 0, 0, 0, 0, 0, 0}
+
+Ejemplo de Estado con Segunda Reina (E2):
+
+{R, 0, 0, 0, 0, 0, 0, 0}
+{0, 0, R, 0, 0, 0, 0, 0}
+{0, 0, 0, 0, 0, 0, 0, 0}
+{0, 0, 0, 0, 0, 0, 0, 0}
+{0, 0, 0, 0, 0, 0, 0, 0}
+{0, 0, 0, 0, 0, 0, 0, 0}
+{0, 0, 0, 0, 0, 0, 0, 0}
+{0, 0, 0, 0, 0, 0, 0, 0}
+
+Resultado Final:
+
+Continuar hasta encontrar todas las soluciones posibles.
+
+Imprimir el total de soluciones encontradas y guardar el archivo con el formato adecuado.
+Descripción clara del algoritmo de retroceso (backtracking) para el problema de las 8 reinas,
+considerando la prioridad en la colocación de reinas en columnas, filas y diagonales.
+
+

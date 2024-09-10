@@ -1,0 +1,13 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     "/Users/aaronescarcega/Library/CloudStorage/OneDrive-Personal/Escritorio/Escuela/FES Aragón 2025-I/Inteligencia Artificial/8 Reinas Retroceso/output/m"
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _imprimir_tablero, symObjAddr: 0x0, symBinAddr: 0x1000037F4, symSize: 0x15C }
+  - { offsetInCU: 0x3F, offset: 0x3F, size: 0x8, addend: 0x0, symName: _conteo_soluciones, symObjAddr: 0x1A2C, symBinAddr: 0x100008000, symSize: 0x0 }
+  - { offsetInCU: 0x69, offset: 0x69, size: 0x8, addend: 0x0, symName: _tablero, symBinAddr: 0x100008010, symSize: 0x0 }
+  - { offsetInCU: 0x8A, offset: 0x8A, size: 0x8, addend: 0x0, symName: _archivo, symBinAddr: 0x100008008, symSize: 0x0 }
+  - { offsetInCU: 0x288, offset: 0x288, size: 0x8, addend: 0x0, symName: _imprimir_tablero, symObjAddr: 0x0, symBinAddr: 0x1000037F4, symSize: 0x15C }
+  - { offsetInCU: 0x2E4, offset: 0x2E4, size: 0x8, addend: 0x0, symName: _es_seguro, symObjAddr: 0x15C, symBinAddr: 0x100003950, symSize: 0xD8 }
+  - { offsetInCU: 0x336, offset: 0x336, size: 0x8, addend: 0x0, symName: _resolver, symObjAddr: 0x234, symBinAddr: 0x100003A28, symSize: 0x188 }
+  - { offsetInCU: 0x3AE, offset: 0x3AE, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x3BC, symBinAddr: 0x100003BB0, symSize: 0x200 }
+...
